@@ -1,0 +1,92 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+}
+.main-container{
+    padding: 4rem;
+    height: 74.5vh;
+    background-color: #000;
+    color: aliceblue;
+}
+form h2{
+    font-weight: 700;
+    font-size: 3rem;
+}
+.user-main-section{
+    display: flex;
+    justify-content: space-between;
+}
+div section input{
+    width: 15rem;
+    height: 1.5rem;
+    background-color: #000;
+    color: aliceblue;
+    border: .5px solid aliceblue;
+    border-radius: 3.5px;
+    outline: none;
+}
+div section input:focus{
+    border: none;
+    border: .5px solid blue;
+}
+.btn{
+    height: 2rem;
+    width: 6rem;
+}
+.added-employees{
+    color: rgb(91, 91, 91);
+    position: relative;
+    top: 4rem;
+}
+.employees{
+    color: aliceblue;
+}
+.message{
+    position: relative;
+    top: 1rem;
+}
+#success{
+    color: green;
+    display: none;
+}
+#feild{
+    color: darkred;
+    display: none;
+}
+@media (max-width: 950px){
+    .user-main-section{
+        display: flex;
+        flex-direction: column;
+ 
+    }
+    .main-container{
+        height: 150vh;
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+    .name, .profession, .age{
+        padding-top: 40px;
+    }
+ 
+    div section input{
+        width: 12rem;
+        height: 1.5rem;
+        background-color: #000;
+        color: aliceblue;
+        border: .5px solid aliceblue;
+        border-radius: 3.5px;
+        outline: none;
+    }
+    .added-employees{
+        position: relative;
+        top: 3.5rem;
+    }
+    .employees{
+        color: aliceblue;
+    }
+    form h2{
+        font-weight: 600;
+        font-size: 2rem;
+    }
+}
